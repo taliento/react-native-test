@@ -23,7 +23,6 @@ export default class FetchExample extends React.Component {
 
         });
 
-
       })
       .catch((error) =>{
         console.error(error);
@@ -32,8 +31,6 @@ export default class FetchExample extends React.Component {
 
   }
 
-
-
   render(){
 
     if(this.state.isLoading){
@@ -41,9 +38,7 @@ export default class FetchExample extends React.Component {
         <View style={{flex: 1, padding: 20}}>
         <ActivityIndicator/>
         </View>
-
       )
-
     }
 
     return(
@@ -54,7 +49,6 @@ export default class FetchExample extends React.Component {
       keyExtractor={({id}, index) => id}
       />
       </View>
-
     );
 
   }

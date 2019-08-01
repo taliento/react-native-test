@@ -8,9 +8,7 @@ class HomeScreen extends React.Component {
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'  }}>
       <Text>Home!</Text>
       </View>
-
     );
-
   }
 
 }
@@ -21,9 +19,7 @@ class SettingsScreen extends React.Component {
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'  }}>
       <Text>Settings!</Text>
       </View>
-
     );
-
   }
 
 }
@@ -34,14 +30,12 @@ class InfoScreen extends React.Component {
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'  }}>
       <Text>Infos!</Text>
       </View>
-
     );
-
   }
 
 }
 
-const TabNavigator = createMaterialTopTabNavigator(
+const TabNavigation = createMaterialTopTabNavigator(
   {
     Home: HomeScreen,
     Settings: SettingsScreen,
@@ -67,4 +61,4 @@ const TabNavigator = createMaterialTopTabNavigator(
   }
 );
 
-export default createAppContainer(TabNavigator);
+export default createAppContainer(TabNavigation);
